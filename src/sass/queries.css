@@ -1,0 +1,48 @@
+/*************************/
+/* BELOW 830px */
+/*************************/
+/* 830px / 16 =  51.875em*/
+@media (max-width: 51.875em) {
+  /* For Mobile Navigation */
+  .search-results-mobile {
+    position: absolute;
+    width: 50vw;
+    top: 10rem;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 888;
+    padding-top: 6rem;
+
+    transform: translateX(-100%);
+    transition: all 0.4s ease-out;
+  }
+  .show {
+    transform: translateX(0);
+  }
+  .recipe {
+    grid-column: 1/-1;
+  }
+
+  .mobile-nav-btn {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/*************************/
+/* BELOW 700px */
+/*************************/
+/* 700px / 16 =  43.75em*/
+@media (max-width: 43.75em) {
+  /* .header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+    padding-top: 3rem; 
+     row-gap: 3rem;
+  }
+  .search {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+  } */
+}
